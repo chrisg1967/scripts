@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Amplify Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html, body { font-family: "Amazon Ember", "Helvetica", "sans-serif"; margin: 0; }
+      a { color: #ff9900; }
+      h1 { font-weight: 300; }
+      hr { height: 1px; background: lightgray; border: none; }
+      .app { width: 100%; }
+      .app-header { color: white; text-align: center; background: #000; width: 100%; margin: 0 0 1em 0; padding: 3em 0 3em 0; box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3); }
+      .app-logo { width: 200px; margin: 0 auto; }
+      .app-body { width: 400px; margin: 0 auto; text-align: center; }
+      .app-body button { background-color: #ff9900; font-size: 14px; color: white; text-transform: uppercase; padding: 1em; border: none; }
+      .app-body button:hover { opacity: 0.8; }
+    </style>
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="app-header">
+        <div class="app-logo">
+          <img
+            src="images/fd_logo.png"
+            alt="fd_logo"
+            width="200px"
+          />
+        </div>
+        <h1>Unity Fire Department</h1>
+      </div>
+      <div class="app-body">
+        <h1>Create Runcard</h1>
+          <label for="cardid">Card ID:</label>
+          <input type="text" id="cardid" name="cardid"><br>
+          <label for="start">Date:</label>
+          <input type="date" id="start" name="start" min="2020-01-01" max="2020-12-31"><br>
+          <label for="type">Call Type:</label>
+          <select id="type" name="type">
+            <option value="medical">Medical</option>
+            <option value="fire">Fire</option>
+          </select><br>
+                <h3>Address</h3>
+         
+                <!-- full-name input-->
+                <div class="control-group">
+                    <label class="control-label">Full Name</label>
+                    <div class="controls">
+                        <input id="full-name" name="full-name" type="text" placeholder="full name" class="input-xlarge">
+                    </div>
+                </div>
+                <!-- address input-->
+                <div class="control-group">
+                    <label class="control-label">Address</label>
+                    <div class="controls">
+                        <input id="address" name="address" type="text" placeholder="address" class="input-xlarge">
+                    </div>
+                </div>
+                <!-- town input-->
+                <div class="control-group">
+                    <label class="control-label">Town</label>
+                    <div class="controls">
+                        <input id="town" name="town" type="text" placeholder="town" class="input-xlarge">
+                    </div>
+                </div>
+          <input type="submit" value="Submit Runcard">
+        </form>
+        <hr />
+    <script src="main.bundle.js"></script>
+  </body>
+</html>
